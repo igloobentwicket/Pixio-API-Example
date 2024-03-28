@@ -61,10 +61,10 @@ function Txt2img() {
   return (
     <Card className="w-full max-w-[600px]">
       <CardHeader>
-       Pixio API Example App
+       Madbutter Example App
         <div className="text-xs text-foreground opacity-50">
           Our text2img demo -{" "}
-          <a href="https://myapps.ai">
+          <a href="https://madbutter.com">
             start building today!
           </a>
         </div>
@@ -78,7 +78,7 @@ function Txt2img() {
             if (loading) return;
             setLoading(true);
 
-            const promises = Array(4).fill(null).map(() => {
+            const promises = Array(2).fill(null).map(() => {
               return generate(positivePrompt, negativePrompt)
                 .then((res) => {
                   if (res) {
